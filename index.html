@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovens Júbilos de Paz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1><i class="fas fa-cross"></i> Jovens Júbilos de Paz</h1>
+                <p>Assembléia de Deus - Sede</p>
+            </div>
+            <div class="header-buttons">
+                <a href="#inscricao-retiro" class="btn btn-primary">Inscreva-se no Retiro</a>
+                <a href="#camisetas" class="btn btn-secondary">Compre a Camiseta</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#agenda"><i class="fas fa-calendar-alt"></i> Agenda</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog & Recados</a></li>
+                <li><a href="#inscricao-retiro"><i class="fas fa-mountain"></i> Retiro</a></li>
+                <li><a href="#camisetas"><i class="fas fa-tshirt"></i> Camisetas</a></li>
+                <li><a href="#sobre"><i class="fas fa-users"></i> Sobre Nós</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Seção Inicial -->
+        <section id="inicio" class="section hero">
+            <div class="hero-content">
+                <h2>Bem-vindo</h2>
+                <p>Um lugar para crescer na fé, construir amizades e servir com propósito. Junte-se a nós nessa jornada!</p>
+                <div class="hero-buttons">
+                    <a href="#agenda" class="btn btn-primary">Próximos Eventos</a>
+                    <a href="#inscricao-retiro" class="btn btn-secondary">Retiro 2026</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="imagens/culto jovens.jpeg" alt="Jovens em grupo">
+            </div>
+        </section>
+
+                <!-- Álbuns de Fotos -->
+        <section id="albuns" class="section">
+            <h2 class="section-title"><i class="fas fa-images"></i> Álbuns de Fotos</h2>
+            <p class="section-subtitle">Reviva os melhores momentos dos nossos eventos</p>
+            
+            <div class="albuns-container">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Os álbuns serão carregados via JavaScript -->
+                    </div>
+                    
+                    <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn carousel-btn-next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="carousel-dots" id="carouselDots">
+                        <!-- Os dots serão gerados via JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="album-viewer" id="albumViewer">
+                    <div class="viewer-header">
+                        <h3 id="viewerTitle">Álbum de Fotos</h3>
+                        <button class="close-viewer" id="closeViewer">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="viewer-content">
+                        <div class="viewer-main-image">
+                            <img id="viewerMainImage" src="" alt="">
+                            <div class="image-counter">
+                                <span id="currentImageIndex">1</span> de <span id="totalImages">0</span>
+                            </div>
+                        </div>
+                        <div class="viewer-thumbnails" id="viewerThumbnails">
+                            <!-- As miniaturas serão carregadas via JavaScript -->
+                        </div>
+                        <div class="viewer-controls">
+                            <button class="viewer-btn" id="prevImageBtn">
+                                <i class="fas fa-chevron-left"></i> Anterior
+                            </button>
+                            <button class="viewer-btn" id="nextImageBtn">
+                                Próxima <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda -->
+        <section id="agenda" class="section">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Agenda de Eventos</h2>
+            <div class="events-container" id="eventsContainer">
+                <!-- Os eventos serão carregados via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Blog e Recados -->
+        <section id="blog" class="section">
+            <h2 class="section-title"><i class="fas fa-blog"></i> Blog & Recados</h2>
+            <div class="blog-container" id="blogContainer">
+                <!-- Os posts do blog serão carregados via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Inscrição para o Retiro -->
+        <section id="inscricao-retiro" class="section highlight-section">
+            <h2 class="section-title"><i class="fas fa-mountain"></i> Retiro 2026</h2>
+            <div class="retiro-content">
+                <div class="retiro-info">
+                    <h3>Encontro com Deus na Natureza</h3>
+                    <p><strong>Data:</strong> 15-17 de Maio de 2026</p>
+                    <p><strong>Local:</strong> Fazenda Monte Sião</p>
+                    <p><strong>Tema:</strong> "Renovando a Esperança"</p>
+                    <p>Participe do nosso retiro anual para jovens! Três dias de reflexão, adoração, palestras inspiradoras e muita comunhão. Vagas limitadas!</p>
+                    <ul class="retiro-benefits">
+                        <li><i class="fas fa-check"></i> Palestras com pastores convidados</li>
+                        <li><i class="fas fa-check"></i> Momentos de adoração e oração</li>
+                        <li><i class="fas fa-check"></i> Atividades ao ar livre</li>
+                        <li><i class="fas fa-check"></i> Alojamento e alimentação inclusos</li>
+                    </ul>
+                </div>
+                <div class="retiro-form">
+                    <h3>Formulário de Inscrição</h3>
+                    <form id="retiroForm">
+                        <div class="form-group">
+                            <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" placeholder="Seu telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="idade" placeholder="Sua idade" min="13" max="35" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="tipoAcomodacao" required>
+                                <option value="">Tipo de acomodação</option>
+                                <option value="coletiva">Coletiva (R$ 400)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="observacoes" placeholder="Observações (alergias, restrições alimentares, etc.)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Inscrição</button>
+                        <div id="retiroMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Camisetas -->
+        <section id="camisetas" class="section">
+            <h2 class="section-title"><i class="fas fa-tshirt"></i> Camisetas da Comunidade</h2>
+            <p class="section-subtitle">Adquira já a camiseta oficial dos Jovens Júbilos de Paz 2026</p>
+            <div class="products-container" id="productsContainer">
+                <!-- Os produtos serão carregados via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="sobre" class="section">
+            <h2 class="section-title"><i class="fas fa-users"></i> Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>A comunidade de jovens da nossa igreja tem como propósito conectar os jovens a Deus e uns aos outros, através de encontros, estudos bíblicos, retiros e atividades sociais.</p>
+                    <p>Nosso grupo é formado por jovens de 13 a 35 anos que buscam crescer espiritualmente enquanto desenvolvem amizades verdadeiras baseadas na fé.</p>
+                    <h3>Nossas Atividades</h3>
+                    <ul>
+                        <li>Encontros semanais aos sábados, às 19h</li>
+                        <li>Estudos bíblicos em pequenos grupos</li>
+                        <li>Projetos de serviço comunitário</li>
+                        <li>Retiros espirituais anuais</li>
+                        <li>Eventos sociais e culturais</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jovens em atividade na igreja">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Rua Júlia Thereza Bini, 740 - Centro, Araucária - PR</p>
+                    <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (41) 9874-5144</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="contactNome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="assunto" required>
+                                <option value="">Assunto da mensagem</option>
+                                <option value="informacoes">Informações sobre o grupo</option>
+                                <option value="oracao">Pedido de oração</option>
+                                <option value="eventos">Dúvidas sobre eventos</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                        <div id="contactMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3><i class="fas fa-cross"></i> Jovens Júbilos de Paz</h3>
+                <p>Conectando jovens a Deus e uns aos outros</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#inscricao-retiro">Retiro</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Receba Nossas Novidades</h4>
+                <form id="newsletterForm">
+                    <input type="email" id="newsletterEmail" placeholder="Seu e-mail" required>
+                    <button type="submit" class="btn btn-secondary">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jovens Júbilos de Paz. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
